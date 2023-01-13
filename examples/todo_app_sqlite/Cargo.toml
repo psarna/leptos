@@ -25,7 +25,7 @@ leptos_router = { path = "../../router", default-features = false }
 log = "0.4.17"
 simple_logger = "4.0.0"
 gloo = { git = "https://github.com/rustwasm/gloo" }
-sqlx = { version = "0.6.2", features = [
+sqlx = { git = "https://github.com/psarna/sqlx", branch = "libsql", features = [
 	"runtime-tokio-rustls",
 	"sqlite",
 ], optional = true }
